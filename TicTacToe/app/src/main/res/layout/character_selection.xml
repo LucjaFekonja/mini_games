@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/beige">
+
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/question" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/characterX"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="X"
+            android:src="@drawable/selectx" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="150dp"
+            android:background="?android:attr/listDivider" />
+
+        <ImageView
+            android:id="@+id/characterO"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toStartOf="@+id/characterX"
+            android:contentDescription="O"
+            android:src="@drawable/selecto" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/go_button"
+        android:text="Continue"/>
+
+</LinearLayout>

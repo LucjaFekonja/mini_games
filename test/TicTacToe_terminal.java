@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class TicTacToe {
+public class TicTacToe_terminal {
 
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ANSI_RESET = "\u001B[0m";
